@@ -992,6 +992,41 @@ body {
     margin-bottom: 20px;
 }
 
+.project-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.project-link-icon {
+    color: var(--text-secondary);
+    transition: all var(--transition-normal);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    border-radius: 8px;
+    background: rgba(108, 99, 255, 0.08);
+    border: 1px solid rgba(108, 99, 255, 0.15);
+}
+
+.project-link-icon:hover {
+    color: var(--accent-primary);
+    background: rgba(108, 99, 255, 0.18);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--accent-primary-glow);
+}
+
+.project-name a {
+    color: inherit;
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.project-name a:hover {
+    color: var(--accent-primary);
+}
+
 .project-icon {
     width: 64px;
     height: 64px;
