@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prem Kumar S | Full Stack Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Prem Kumar S - Electronics & Communication Engineering graduate specializing in Java Full Stack Development, web technologies, and database management.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Stars Canvas Background -->
+    <canvas id="starsCanvas"></canvas>
+
+    <!-- Floating Particles -->
+    <div id="particles"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-logo">
+            <span class="logo-bracket">&lt;</span>PK<span class="logo-slash">/</span><span class="logo-bracket">&gt;</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+            <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+            <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+            <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+            <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+            <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="section hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-greeting" data-animate="fade-up">Hello, I'm</div>
+                <h1 class="hero-name" data-animate="fade-up" data-delay="200">
+                    <span class="name-line">Prem Kumar</span>
+                    <span class="name-accent">S</span>
+                </h1>
+                <div class="hero-title-wrapper" data-animate="fade-up" data-delay="400">
+                    <span class="hero-title-prefix">I'm a </span>
+                    <span class="typewriter" id="typewriter"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description" data-animate="fade-up" data-delay="600">
+                    Enthusiastic Electronics & Communication Engineering graduate passionate about building 
+                    real-world applications with Java Full Stack technologies.
+                </p>
+                <div class="hero-cta" data-animate="fade-up" data-delay="800">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View Projects</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Contact Me</span>
+                    </a>
+                </div>
+                <div class="hero-stats" data-animate="fade-up" data-delay="1000">
+                    <div class="stat">
+                        <span class="stat-number" data-count="2">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="7.45">0</span>
+                        <span class="stat-label">CGPA</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="6">0</span><span class="stat-plus">+</span>
+                        <span class="stat-label">Technologies</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image" data-animate="fade-left" data-delay="300">
+                <div class="image-orbit">
+                    <div class="orbit-ring orbit-ring-1"></div>
+                    <div class="orbit-ring orbit-ring-2"></div>
+                    <div class="orbit-ring orbit-ring-3"></div>
+                    <div class="orbit-dot orbit-dot-1"></div>
+                    <div class="orbit-dot orbit-dot-2"></div>
+                    <div class="orbit-dot orbit-dot-3"></div>
+                </div>
+                <div class="profile-frame">
+                    <div class="profile-glow"></div>
+                    <img src="profile.png" alt="Prem Kumar S - Full Stack Developer" class="profile-img" id="profileImg">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator" data-animate="fade-up" data-delay="1200">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="section-container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">// ABOUT ME</span>
+                <h2 class="section-title">Know Me <span class="title-accent">Better</span></h2>
+            </div>
+            <div class="about-content">
+                <div class="about-card glass-card" data-animate="fade-up" data-delay="200">
+                    <div class="about-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a5 5 0 015 5v2a5 5 0 01-10 0V7a5 5 0 015-5zM20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/></svg>
+                    </div>
+                    <h3>Who I Am</h3>
+                    <p>An enthusiastic and motivated Electronics and Communication Engineering graduate with a keen interest in software development and emerging technologies. I thrive on solving real-world problems through code.</p>
+                </div>
+                <div class="about-card glass-card" data-animate="fade-up" data-delay="400">
+                    <div class="about-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg>
+                    </div>
+                    <h3>What I Do</h3>
+                    <p>Experienced in Java Full Stack Development, web technologies, and database management. Skilled in building robust applications using Java, JDBC, JSP, Servlets, and MySQL with strong teamwork and problem-solving abilities.</p>
+                </div>
+                <div class="about-card glass-card" data-animate="fade-up" data-delay="600">
+                    <div class="about-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                    </div>
+                    <h3>My Goal</h3>
+                    <p>Seeking an opportunity to apply technical knowledge in real-world projects and grow as a software professional while continuously learning and adapting to emerging technologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="section-container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">// EDUCATION</span>
+                <h2 class="section-title">Academic <span class="title-accent">Journey</span></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-item" data-animate="fade-right" data-delay="200">
+                    <div class="timeline-dot">
+                        <div class="timeline-dot-inner"></div>
+                    </div>
+                    <div class="timeline-card glass-card">
+                        <div class="timeline-year">2022 – Jun 2026</div>
+                        <h3>B.E in Electronics & Communication Engineering</h3>
+                        <p class="timeline-institution">Jyothy Institute of Technology, Bengaluru</p>
+                        <p class="timeline-university">Visvesvaraya Technological University (VTU), India</p>
+                        <div class="timeline-score">
+                            <span class="score-label">CGPA</span>
+                            <span class="score-value">7.45</span>
+                            <div class="score-bar">
+                                <div class="score-fill" data-width="74.5"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-animate="fade-left" data-delay="400">
+                    <div class="timeline-dot">
+                        <div class="timeline-dot-inner"></div>
+                    </div>
+                    <div class="timeline-card glass-card">
+                        <div class="timeline-year">Grad-2022</div>
+                        <h3>Pre-University Course (2nd PUC)</h3>
+                        <p class="timeline-institution">Vijaya Bifurcated PU College, RV Road Basavanagudi, Bengaluru</p>
+                        <p class="timeline-stream">Science Stream (PCMC's)</p>
+                        <div class="timeline-score">
+                            <span class="score-label">Percentage</span>
+                            <span class="score-value">57%</span>
+                            <div class="score-bar">
+                                <div class="score-fill" data-width="57"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-animate="fade-right" data-delay="600">
+                    <div class="timeline-dot">
+                        <div class="timeline-dot-inner"></div>
+                    </div>
+                    <div class="timeline-card glass-card">
+                        <div class="timeline-year">Grad-2020</div>
+                        <h3>Secondary School Certificate (10th Grade)</h3>
+                        <p class="timeline-institution">Karnataka Public School Uttarahalli, Bengaluru</p>
+                        <div class="timeline-score">
+                            <span class="score-label">Percentage</span>
+                            <span class="score-value">65.28%</span>
+                            <div class="score-bar">
+                                <div class="score-fill" data-width="65.28"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="section-container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">// SKILLS</span>
+                <h2 class="section-title">Tech <span class="title-accent">Arsenal</span></h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category glass-card" data-animate="fade-up" data-delay="200">
+                    <div class="skill-category-header">
+                        <div class="skill-icon programming">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        </div>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-animate="pop" data-delay="300">
+                            <span class="tag-dot"></span>HTML
+                        </span>
+                        <span class="skill-tag" data-animate="pop" data-delay="350">
+                            <span class="tag-dot"></span>CSS
+                        </span>
+                        <span class="skill-tag" data-animate="pop" data-delay="400">
+                            <span class="tag-dot"></span>Java
+                        </span>
+                        <span class="skill-tag" data-animate="pop" data-delay="450">
+                            <span class="tag-dot"></span>JDBC
+                        </span>
+                        <span class="skill-tag" data-animate="pop" data-delay="500">
+                            <span class="tag-dot"></span>JSP
+                        </span>
+                        <span class="skill-tag" data-animate="pop" data-delay="550">
+                            <span class="tag-dot"></span>Servlets
+                        </span>
+                        <span class="skill-tag" data-animate="pop" data-delay="600">
+                            <span class="tag-dot"></span>MySQL
+                        </span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card" data-animate="fade-up" data-delay="400">
+                    <div class="skill-category-header">
+                        <div class="skill-icon os">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                        </div>
+                        <h3>Operating Systems</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-animate="pop" data-delay="500">
+                            <span class="tag-dot"></span>Windows
+                        </span>
+                        <span class="skill-tag" data-animate="pop" data-delay="550">
+                            <span class="tag-dot"></span>macOS
+                        </span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card" data-animate="fade-up" data-delay="600">
+                    <div class="skill-category-header">
+                        <div class="skill-icon software">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                        </div>
+                        <h3>Software Proficiency</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-animate="pop" data-delay="700">
+                            <span class="tag-dot"></span>Microsoft Excel
+                        </span>
+                        <span class="skill-tag" data-animate="pop" data-delay="750">
+                            <span class="tag-dot"></span>Microsoft Word
+                        </span>
+                        <span class="skill-tag" data-animate="pop" data-delay="800">
+                            <span class="tag-dot"></span>PowerPoint
+                        </span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card" data-animate="fade-up" data-delay="800">
+                    <div class="skill-category-header">
+                        <div class="skill-icon typing">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 8h.01M10 8h.01M14 8h.01M18 8h.01M8 12h.01M12 12h.01M16 12h.01M7 16h10"/></svg>
+                        </div>
+                        <h3>Typing Proficiency</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-animate="pop" data-delay="900">
+                            <span class="tag-dot"></span>Kannada Typing
+                        </span>
+                        <span class="skill-tag" data-animate="pop" data-delay="950">
+                            <span class="tag-dot"></span>English Typing
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skill Bars -->
+            <div class="skill-bars-section" data-animate="fade-up" data-delay="300">
+                <h3 class="skill-bars-title">Core Proficiency</h3>
+                <div class="skill-bars">
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-header">
+                            <span class="skill-bar-name">Java</span>
+                            <span class="skill-bar-percent">85%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="85"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-header">
+                            <span class="skill-bar-name">HTML & CSS</span>
+                            <span class="skill-bar-percent">80%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="80"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-header">
+                            <span class="skill-bar-name">MySQL</span>
+                            <span class="skill-bar-percent">75%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="75"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-header">
+                            <span class="skill-bar-name">JSP & Servlets</span>
+                            <span class="skill-bar-percent">70%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="70"></div>
+                        </div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-bar-header">
+                            <span class="skill-bar-name">JDBC</span>
+                            <span class="skill-bar-percent">70%</span>
+                        </div>
+                        <div class="skill-bar-track">
+                            <div class="skill-bar-fill" data-width="70"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="section-container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">// PROJECTS</span>
+                <h2 class="section-title">Featured <span class="title-accent">Work</span></h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card glass-card" data-animate="fade-up" data-delay="200">
+                    <div class="project-card-header">
+                        <div class="project-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/><path d="M6 15h4"/><path d="M14 15h4"/></svg>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-badge">Academic</span>
+                        </div>
+                    </div>
+                    <h3 class="project-name">Online Banking Management System</h3>
+                    <p class="project-description">
+                        A comprehensive web-based banking application built with Java technologies. 
+                        Features include user registration, login authentication, account management, 
+                        and secure transaction handling.
+                    </p>
+                    <div class="project-tech">
+                        <span>Java</span>
+                        <span>JSP</span>
+                        <span>Servlets</span>
+                        <span>JDBC</span>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="project-features">
+                        <div class="feature-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>User Registration & Authentication</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Account Management</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Transaction Handling</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card" data-animate="fade-up" data-delay="400">
+                    <div class="project-card-header">
+                        <div class="project-icon green">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M12 8v4M12 16h.01"/></svg>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-badge green">IoT</span>
+                        </div>
+                    </div>
+                    <h3 class="project-name">Soil-Free Cultivation: Smart Hydroponics System</h3>
+                    <p class="project-description">
+                        An advanced, automated environmental control system for sustainable agriculture. 
+                        Integrates modern IoT technologies with hydroponic farming to address challenges 
+                        of traditional agriculture including resource scarcity and environmental degradation.
+                    </p>
+                    <div class="project-tech">
+                        <span>IoT</span>
+                        <span>Sensors</span>
+                        <span>Automation</span>
+                        <span>Agriculture</span>
+                    </div>
+                    <div class="project-features">
+                        <div class="feature-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Continuous Monitoring</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Intelligent Growth Parameter Management</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                            <span>Sustainable Agriculture Solution</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="section">
+        <div class="section-container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">// BEYOND CODE</span>
+                <h2 class="section-title">Other <span class="title-accent">Activities</span></h2>
+            </div>
+            <div class="activities-grid">
+                <div class="activity-card glass-card" data-animate="fade-up" data-delay="200">
+                    <div class="activity-emoji">🤝</div>
+                    <h3>Youth For Seva – Chiguru Event</h3>
+                    <p>Actively participated in organizing and executing community service activities, contributing to social awareness and engagement.</p>
+                    <div class="activity-tag">Community Service</div>
+                </div>
+                <div class="activity-card glass-card" data-animate="fade-up" data-delay="400">
+                    <div class="activity-emoji">🎮</div>
+                    <h3>Gamethon 6.0</h3>
+                    <p>Participated in the Gamethon 6.0 event at Jyothy Institute of Technology, showcasing skills in teamwork and strategic gameplay.</p>
+                    <div class="activity-tag">Competition</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="section-container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">// GET IN TOUCH</span>
+                <h2 class="section-title">Let's <span class="title-accent">Connect</span></h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-animate="fade-up" data-delay="200">
+                    <p class="contact-intro">I'm currently looking for opportunities to apply my skills in real-world projects. Feel free to reach out!</p>
+                    <div class="contact-cards">
+                        <a href="mailto:jgt22ec077@jyothyit.ac.in" class="contact-card glass-card">
+                            <div class="contact-card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                            </div>
+                            <div class="contact-card-text">
+                                <span class="contact-card-label">Email</span>
+                                <span class="contact-card-value">jgt22ec077@jyothyit.ac.in</span>
+                            </div>
+                        </a>
+                        <a href="tel:+916366515200" class="contact-card glass-card">
+                            <div class="contact-card-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                            </div>
+                            <div class="contact-card-text">
+                                <span class="contact-card-label">Phone</span>
+                                <span class="contact-card-value">+91 6366515200</span>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/prem-kumar-0105b311a" target="_blank" rel="noopener" class="contact-card glass-card">
+                            <div class="contact-card-icon linkedin">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                            </div>
+                            <div class="contact-card-text">
+                                <span class="contact-card-label">LinkedIn</span>
+                                <span class="contact-card-value">Prem Kumar S</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper" data-animate="fade-up" data-delay="400">
+                    <form class="contact-form glass-card" id="contactForm">
+                        <div class="form-group">
+                            <label for="formName">Your Name</label>
+                            <input type="text" id="formName" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="formEmail">Your Email</label>
+                            <input type="email" id="formEmail" name="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="formMessage">Message</label>
+                            <textarea id="formMessage" name="message" rows="4" placeholder="Your message..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                            <span>Send Message</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-bracket">&lt;</span>Prem Kumar S<span class="logo-slash">/</span><span class="logo-bracket">&gt;</span>
+            </div>
+            <p class="footer-text">Designed & Built with ❤️ | © 2026 All Rights Reserved</p>
+            <div class="footer-socials">
+                <a href="mailto:jgt22ec077@jyothyit.ac.in" aria-label="Email">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/prem-kumar-0105b311a" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                </a>
+                <a href="tel:+916366515200" aria-label="Phone">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
